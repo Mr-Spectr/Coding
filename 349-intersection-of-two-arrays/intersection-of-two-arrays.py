@@ -1,10 +1,10 @@
 class Solution:
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
-         set1 = set(nums1)
-         result_set = set()
-         for num in nums2:
-            if num in set1:
-                result_set.add(num)
+        arr=[]
+        for num in nums1:
+            if num in nums2:
+                if num not in arr:
+                    arr.append(num)
+        return arr
 
-         return list(result_set)
         
