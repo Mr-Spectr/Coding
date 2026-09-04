@@ -4,4 +4,3 @@ class Solution:
         for num in nums:
             single_num ^= num
         return single_num
-
