@@ -1,13 +1,10 @@
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
-        w1=len(word1)
-        w2=len(word2)
-        m=max(w1,w2)
         new=""
-        for i in range(m):
-            if i<w1:
+        for i in range(max(len(word1), len(word2))):
+            if i<len(word1):
                 new=new+word1[i]
-            if i<w2:
+            if i<len(word2):
                 new=new+word2[i]
 
         return new
