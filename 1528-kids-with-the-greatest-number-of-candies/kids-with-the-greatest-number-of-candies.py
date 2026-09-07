@@ -1,6 +1,4 @@
-from typing import List
-
-class Solution:
-    def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
-        max_candies = max(candies)
-        return [candy + extraCandies >= max_candies for candy in candies]
+class Solution(object):
+    def kidsWithCandies(self, candies, extraCandies):
+        max_val = max(candies)
+        return [candy + extraCandies >= max_val for candy in candies]
